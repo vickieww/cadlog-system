@@ -18,4 +18,6 @@ class Database{
                 return self::$instance;
     }
     }
+    //Nesse projeto, o arqui view retira e capta os dados do usuário na página de cadastro, em seguida ela passa pelo arquivo login paa realizar o tratamento dos dados; apenas os arquivos dentro deModel tem acesso direto ao BD e podem alterá-lo. Esse método traz mais segurança ao sistema.
 ?>
+
