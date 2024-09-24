@@ -18,8 +18,10 @@
 ## Descrição
 
 Esse projeto cria um sistema de acesso a um site interno, com páginas de cadastro e login. No processo ele faz a autenticação do usuário através de um sistema reforçado que conecta o banco de dados ao front-end, passando por outras páginas de autenticação.
- 
+
 ## Métodos PHP
+
+- self::$instance->setAttribute : Define um atributo no identificador do banco de dados. Como no caso, nesse projeto: PDO::ATTR_ERRMODE.
 
 ## Funções
 
