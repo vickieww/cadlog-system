@@ -1,4 +1,5 @@
 # cadlog-system
+![img](imgs/)
 
 ## Índice
 
@@ -88,11 +89,18 @@ Função: Chama o método login da classe AuthController, responsável por lidar
   
 ## Tecnologias utilizadas
 
+- ``CSS 3``
+- ``HTML 5``
+- ``VSCODE``
+- ``PHP``
+- ``XAMPP``
+  
 ## Lições e aprendizados
 
 ## Autores
 
-Orientador Leonardo Rocha
+Vitória Gabrieli  
+[Acesse o GitHub](https://github.com/vickieww)  
 
-
-Vitória Gabrieli
+Orientador Leonardo Rocha  
+[Acesse o GitHub](https://github.com/LeonardoRochaMarista)
