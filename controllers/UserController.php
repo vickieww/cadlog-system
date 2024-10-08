@@ -13,6 +13,7 @@ class UserController{
            ];
            User::create($data);
            header('Location: index.php');
+           //Redireciona o usuário para a página index.php após a execução do cadastro ou login. 
     }else{
         //Se a requisição não for POST, por exemplo "GET", carrega a página de registro
         include 'views/register.php';

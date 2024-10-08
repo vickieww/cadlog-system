@@ -13,7 +13,7 @@ class User{
     //Função para encontrar o usuário pelo ID
         public static function find($id){
             $conn = Database::getConnetion();
-            $stmt = $conn-.prepare("SELECT * FROM usuarios WHERE id = :id");
+            $stmt = $conn->prepare("SELECT * FROM usuarios WHERE id = :id");
             $stmt->execute(['id' => $id]);
             return $stmt->fetch(PDO::FETCH_ASSOC);
         }
