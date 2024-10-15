@@ -20,6 +20,9 @@ switch($action){
         case 'register':
             $userController->register();
             break;
+            case 'logout':
+                $authController ->logout();
+                break;
         default:
         $authController->login();
         break;

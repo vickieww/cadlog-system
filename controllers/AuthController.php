@@ -28,6 +28,12 @@ class AuthController{
             //Se a requisição não for POST, por exemplo GET, carrega a página de registro
             include 'views/login.php';
         }
+       
+    }
+    public function logout(){
+            session_start();
+            session_destroy();
+            header('Location: index.php');
     }
 }
 ?>
