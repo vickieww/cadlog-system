@@ -23,19 +23,31 @@
             </thead>
             <tbody>
  
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
- 
-            </tbody>
-        </table>
- 
-        <a href="" class="btn">Voltar ao Dashboard</a>
-    </div>
+ <?php foreach ($user as $user) : ?>
+     <tr>
+         <td><?= $user['id'] ?></td>
+         <td><?= $user['nome'] ?></td>
+         <td><?= $user['email'] ?></td>
+         <td><?= $user['perfil'] ?></td>
+         <td>
+             <!-- verifica se o perfil é admin ou gestor para poder adicionar ou não o botão editar -->
+             <?php if ($_SESSION['perfil'] == 'admin' || $_SESSION['perfil'] == 'gestor') : ?>
+                 <a href="">Editar</a>
+             <?php endif; ?>
+
+             <!-- insere o botão de exclusão apenas para o perfil admin -->
+             <?php if ($_SESSION['perfil'] == 'admin') : ?>
+                 <a href="">Excluir</a>
+
+             <?php endif; ?>
+         </td>
+     </tr>
+ <?php endforeach; ?>
+</tbody>
+</table>
+
+<a href="index.php?action=dashboard" class="btn">Voltar ao Dashboard</a>
+</div>
 </body>
- 
+
 </html>
