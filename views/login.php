@@ -64,7 +64,9 @@ a {
     <!-- Os dados serão enviados para 'index.php' com a ação 'login' -->
      <main>
     <form method="post" action="index.php?action=login">
+        <label for="email">E-mail</label></br>
         <input type="email" name="email" placeholder="Email" required><br>
+        <label for="senha">Senha</label></br>
         <input type="password" name="senha" placeholder="Senha" required><br>
         <button type="submit">Login</button>
     </form>
